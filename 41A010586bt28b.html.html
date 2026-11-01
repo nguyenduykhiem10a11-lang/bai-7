@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ - Nguyễn Duy Khiêm</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    color: white;
+    background: linear-gradient(135deg, #1d4ed8, #0f172a);
+}
+
+header h1 { margin-top: 0; }
+
+nav {
+    background: #172554;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 14px;
+    display: inline-block;
+}
+
+nav a:hover { color: #facc15; }
+
+.container {
+    width: 92%;
+    max-width: 950px;
+    margin: 28px auto;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 14px #0f172a12;
+}
+
+.profile { text-align: center; }
+
+.avatar {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+}
+
+h2 { color: #1d4ed8; }
+
+.assignment {
+    display: block;
+    text-decoration: none;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 9px;
+    transition: .2s;
+}
+
+.assignment:hover {
+    background: #dbeafe;
+    transform: translateY(-2px);
+}
+
+.assignment strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: white;
+    background: #172554;
+}
+
+@media (max-width: 550px) {
+    .card { padding: 17px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TRANG CHỦ BÀI TẬP LẬP TRÌNH WEB</h1>
+    <p>Tổng hợp bài tập của sinh viên Nguyễn Duy Khiêm</p>
+</header>
+
+<nav>
+    <a href="#thongtin">Thông tin cá nhân</a>
+    <a href="#baitap">Bài tập</a>
+    <a href="#gioithieu">Giới thiệu</a>
+</nav>
+
+<main class="container">
+
+    <section class="card profile" id="thongtin">
+        <img src="khiem.jpg.JPG" alt="Ảnh đại diện của Nguyễn Duy Khiêm"
+             class="avatar"
+             onerror="this.alt='Chưa thêm ảnh đại diện'; this.style.display='none';">
+
+        <h2>Nguyễn Duy Khiêm</h2>
+        <p><strong>Mã số sinh viên:</strong> 241A010586</p>
+        <p><strong>Ngành học:</strong> Công nghệ thông tin</p>
+        <p><strong>Trường:</strong> Đại học Văn Hiến</p>
+    </section>
+
+    <section class="card" id="baitap">
+        <h2>Các bài tập đã thực hiện</h2>
+        <p>Bấm vào từng mục để xem ảnh kết quả hoặc mở bài tập.</p>
+
+        <a class="assignment" href="27.jng.png" target="_blank">
+            <strong>Bài 27 - Xem kết quả</strong>
+            Mở ảnh chụp kết quả bài 27.
+        </a>
+
+        <a class="assignment" href="28.jng.png" target="_blank">
+            <strong>Bài 28 - Game kiểm tra tốc độ</strong>
+            Mở ảnh chụp kết quả bài 28.
+        </a>
+
+        <a class="assignment" href="29.jng.png" target="_blank">
+            <strong>Bài 28a - Game kiểm tra tốc độ nâng cấp</strong>
+            Mở ảnh chụp kết quả bài 28a.
+        </a>
+
+        <a class="assignment" href="bt28b.html">
+            <strong>Bài 28b - Game kiểm tra tốc độ nâng cấp 2</strong>
+            Bấm để vào chơi game bài 28b.
+        </a>
+    </section>
+
+    <section class="card" id="gioithieu">
+        <h2>Giới thiệu trang web</h2>
+        <p>
+            Trang web được tạo để tổng hợp các bài tập môn Lập trình Web.
+            Người xem có thể xem ảnh kết quả của các bài đã thực hiện
+            và truy cập trực tiếp vào game kiểm tra tốc độ ở bài 28b.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Nguyễn Duy Khiêm - 241A010586</p>
+</footer>
+
+</body>
+</html>
